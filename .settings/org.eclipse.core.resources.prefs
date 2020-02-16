@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//devices/CMW500.py=utf-8
+encoding//devices/KeySightUXM.py=utf-8
+encoding//fwk/ftm_interface.py=utf-8
+encoding//modules/MeasureCA.py=utf-8
+encoding//modules/Modem_CA_Verify_Keysight.py=utf-8
+encoding/debug.py=gbk
