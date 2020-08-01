@@ -1,0 +1,4 @@
+project_name,ca_comb,iteration,ca_comb_new,cells_parameter,NR_channel,pcell,mimo,Verdict,DL_TPUT/(Mbps)[average-tput],UL_TPUT/(Mbps)[average-tput],DL_BLER(%),UL_BLER(%),DL_TPUT_NR/(Mbps)[average-tput],UL_TPUT_NR/(Mbps)[average-tput],DL_BLER_NR/(%),UL_BLER_NR/(%),LTE_TX_POWER,NR_TX_POWER,error_info
+Kiev,1A-7A,0,"['1A', '7A']","[['FDD', 1, 300, 10], ['FDD', 7, 3100, 10]]",N/A,band1,,FAIL,,,,,,,,,,,['UE attach failed']
+Kiev,1A-20A,0,"['1A', '20A']","[['FDD', 1, 300, 10], ['FDD', 20, 6300, 10]]",N/A,band1,,FAIL,,,,,,,,,,,['UE attach failed']
+Kiev,1A-40A,0,"['1A', '40A']","[['FDD', 1, 300, 10], ['TDD', 40, 39150, 10]]",N/A,band1,,FAIL,,,,,,,,,,,['UE attach failed']

@@ -1,0 +1,4 @@
+project_name,ca_comb,iteration,ca_comb_new,cells_parameter,NR_channel,pcell,mimo,Verdict,DL_TPUT/(Mbps)[average-tput],UL_TPUT/(Mbps)[average-tput],DL_BLER(%),UL_BLER(%),DL_TPUT_NR/(Mbps)[average-tput],UL_TPUT_NR/(Mbps)[average-tput],DL_BLER_NR/(%),UL_BLER_NR/(%),LTE_TX_POWER,NR_TX_POWER,error_info
+Kiev,2A-12A-n66A,0,"['2A', '12A', 'n66A']","[['FDD', 2, 900, 10], ['FDD', 12, 5095, 10], ['FDD', 'n66']]",LOW,band2,,FAIL,,,,,,,,,,,['lte attach failed']
+Kiev,2A-12A-n66A,1,"['2A', '12A', 'n66A']","[['FDD', 2, 900, 10], ['FDD', 12, 5095, 10], ['FDD', 'n66']]",LOW,band2,,FAIL,,,,,,,,,,,"['lte attach failed', 'lte attach failed']"
+Kiev,2A-66A-n5A,0,"['2A', '66A', 'n5A']","[['FDD', 2, 900, 10], ['FDD', 66, 66486, 10], ['FDD', 'n5']]",LOW,band2,,FAIL,,,,,,,,,,,['lte attach failed']

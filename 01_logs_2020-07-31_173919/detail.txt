@@ -1,0 +1,484 @@
+[2020-07-31 17:39:19,812] test_config.py->create_default_params line:21 [ERROR]Creating default configuration
+[2020-07-31 17:39:19,813] test_config.py->read_config_file line:58 [ERROR]read test config from file D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\02_config\test_config.ini
+[2020-07-31 17:39:19,814] test_config.py->read_config_file line:76 [INFO]{'ProjectName': 'Kiev', 'device_name': 'KeysightUXM', 'tc_module': 'Modem_CA_Verify_Keysight', 'test_config_name': 'test_config.ini', 'manual': False, 'root_path': 'D:\\PAT\\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release', 'config_path': 'D:\\PAT\\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\\02_config', 'CA_tpye': 'LTE', 'ca_combs_name': 'ca_combs.xlsx', 'ca_parameter_load_type': 'auto', 'document_path': 'D:\\PAT\\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\\03_document', 'auto_get_qualcomm_port': True, 'qualcomm_port': '21', 'phone_control_method': 'adb', 'repeat_while_fail': False, 'is_loop_pcell': False, 'channel_config_nr': ['LOW', 'MID', 'HIGH'], 'scpi_command_extra_name': 'scpi_command_extra.txt', 'is_tx_power_test': False, 'is_throughput_test': False, 'sim_card_type': 'keysight', 'Instrument IP': '192.168.0.2', 'guide_document_name': 'user_guide.docx', 'test_pause': False, 'test_stop': False, 'scpi_command': 'D:\\PAT\\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\\04_scpi_command', 'combos_path': 'D:\\PAT\\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\\05_combos', '03_documnet': 'D:\\PAT\\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\\03_document', 'lte_4X4_mimo_band': [], 'mimo_list': '1111111', 'NR_TDD_BW': '60', 'is_restart_phone': True, 'device_ta': 'TCPIP0::192.168.0.2::hislip2::INSTR', 'device_xapp_ip': 'TCPIP0::192.168.0.2::hislip1::INSTR', 'device2_name': 'CMW500', 'GPIB': 'GPIB0::20::INSTR', 'repeat_fail_max': '1', 'NR_4X4_mimo_band': ['n1', 'n3', 'n7', 'n38', 'n41', 'n77', 'n78'], 'NR_FDD_BW': '20', 'nr_band_list': ['n1', 'n3', 'n5', 'n7', 'n8', 'n12', 'n20', 'n25', 'n28', 'n29', 'n34', 'n38', 'n39', 'n40', 'n41', 'n48', 'n50', 'n51', 'n65', 'n66', 'n70', 'n71', 'n74', 'n75', 'n76', 'n77', 'n78', 'n79', 'n41', 'n261', 'n260', 'n261', 'n257', 'n258'], 'restart_phone': True}
+[2020-07-31 17:39:19,826] main.py->__init__ line:57 [INFO]this is farther class TestFramework
+[2020-07-31 17:39:26,222] KeySightUXM.py->__init__ line:30 [INFO]connect to keysight UXM: TCPIP0::192.168.0.2::hislip2::INSTR
+[2020-07-31 17:39:36,442] main.py->get_tc_module line:64 [INFO]get tc module
+[2020-07-31 17:39:36,442] Modem_CA_Verify_Keysight.py->__init__ line:35 [INFO]*** module Modem_CA_Verify_Keysight constructor
+[2020-07-31 17:39:36,442] Modem_CA_Verify_Keysight.py->__init__ line:40 [INFO]True
+[2020-07-31 17:39:36,442] Modem_CA_Verify_Keysight.py->read_nr_band_from_config line:123 [INFO]{'1A': (1, 300, 10), '1AA': (1, 500, 20), '1C': (1, 201, 20), '1CC': (1, 399, 20), '2A': (2, 900, 10), '2AA': (2, 1150, 10), '2C': (2, 801, 20), '2CC': (2, 999, 20), '3A': (3, 1300, 20), '3AA': (3, 1775, 20), '3C': (3, 1481, 10), '3CC': (3, 1625, 20), '4A': (4, 2175, 10), '4AA': (4, 2350, 10), '5A': (5, 2476, 10), '5B': (5, 2476, 10), '5BB': (5, 2575, 10), '5AA': (5, 2600, 10), '7A': (7, 3100, 10), '7AA': (7, 3400, 10), '7C': (7, 3006, 10), '7CC': (7, 3150, 20), '7B': (7, 3076, 15), '7BB': (7, 3169, 5), '8A': (8, 3625, 10), '12A': (12, 5095, 10), '12B': (12, 5048, 5), '12BB': (12, 5120, 10), '13A': (13, 5230, 10), '14A': (14, 5330, 10), '17A': (17, 5790, 10), '18A': (18, 5925, 10), '19A': (19, 6075, 10), '20A': (20, 6300, 10), '25A': (25, 8140, 20), '25AA': (25, 8590, 20), '26A': (26, 8990, 10), '26AA': (26, 8990, 5), '28A': (28, 9435, 10), '29A': (29, 9715, 10), '30A': (30, 9820, 10), '32A': (32, 10140, 10), '38A': (38, 38000, 10), '38C': (38, 37850, 20), '38CC': (38, 38048, 20), '40A': (40, 39150, 10), '40AA': (40, 39600, 10), '40C': (40, 39249, 20), '40CC': (40, 39051, 20), '40D': (40, '38952', 20), '40DD': (40, 39150, 20), '40DDD': (40, 39348, 20), '46A': (46, 46890), '46AA': (46, 54340, 20), '46C': (46, 50692, 20), '46CC': (46, 50890, 20), '46D': (46, 53942, 20), '46DD': (46, 54140, 20), '46DDD': (46, 54338, 20), '66B': (66, 66837, 10), '66BB': (66, 66936, 10), '66A': (66, 66486, 10), '66AA': (66, 67086, 10), '66C': (66, 66787, 20), '66CC': (66, 66985, 20), '66D': (66, 66688, 20), '66DD': (66, 66886, 20), '66DDD': (66, 67084, 20), '71A': (71, 68765, 10), '41C': (41, 40521, 20), '41CC': (41, 40719, 20), '41A': (41, 40620, 20), '41AA': (41, 41540, 10), '41D': (41, 40422, 20), '41DD': (41, 40620, 20), '41DDD': (41, 40818, 20), '41E': (41, 39705, 10), '41EE': (41, 39849, 20), '41EEE': (41, 41292, 20), '41EEEE': (41, 41490, 20), 'n1A': ['n1'], 'n2A': ('n2', 390000, 20), 'n3A': ['n3'], 'n5A': ['n5'], 'n7A': ['n7'], 'n66A': ['n66'], 'n41A': ['n41'], 'n71A': ['n71'], 'n28A': ['n28'], 'n78A': ['n78'], 'n25A': ['n25'], 'n12A': ['n12'], 'n8A': ['n8'], 'n20A': ['n20'], 'n29A': ['n29'], 'n34A': ['n34'], 'n38A': ['n38'], 'n39A': ['n39'], 'n40A': ['n40'], 'n48A': ['n48'], 'n50A': ['n50'], 'n51A': ['n51'], 'n65A': ['n65'], 'n70A': ['n70'], 'n74A': ['n74'], 'n75A': ['n75'], 'n76A': ['n76'], 'n77A': ['n77'], 'n79A': ['n79'], 'n261A': ['n261'], 'n260A': ['n260'], 'n257A': ['n257'], 'n258A': ['n258']}
+[2020-07-31 17:39:36,444] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_173919\CA_TEST.csv
+[2020-07-31 17:39:36,446] Modem_CA_Verify_Keysight.py->main line:284 [INFO]########################################
+[2020-07-31 17:39:36,446] Modem_CA_Verify_Keysight.py->main line:285 [INFO]#########main starts#########
+[2020-07-31 17:39:36,446] Modem_CA_Verify_Keysight.py->main line:286 [INFO]########################################
+[2020-07-31 17:39:36,468] KeySightUXM.py->__init__ line:30 [INFO]connect to keysight UXM: TCPIP0::192.168.0.2::hislip2::INSTR
+[2020-07-31 17:39:36,570] Modem_CA_Verify_Keysight.py->sleep line:255 [INFO]sleep 5 second
+[2020-07-31 17:39:41,683] Modem_CA_Verify_Keysight.py->read_conf line:140 [INFO]nocol:2
+[2020-07-31 17:39:41,684] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 2A-12A-n66A
+[2020-07-31 17:39:41,684] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:39:41,684] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:39:41,685] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:39:41,686] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 2A-12A-n66A 
+[2020-07-31 17:39:41,686] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 
+[2020-07-31 17:39:41,687] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:39:41,687] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾2A-12A-n66A¡¿#######################
+
+[2020-07-31 17:39:41,687] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:39:41,687] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['2A', '12A', 'n66A']
+[2020-07-31 17:39:41,688] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['2A', '12A', 'n66A']
+[2020-07-31 17:39:41,688] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['2A', '12A', 'n66A']
+[2020-07-31 17:39:41,688] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['2A', '12A', 'n66A']
+[2020-07-31 17:39:41,688] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['2A', '12A', 'n66A']
+[2020-07-31 17:39:41,688] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['2A', '12A', 'n66A']
+[2020-07-31 17:39:41,688] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['2A', '12A', 'n66A']
+[2020-07-31 17:39:41,689] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['2A', '12A', 'n66A']
+[2020-07-31 17:39:41,690] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:39:41,690] KeySightUXM.py->deactive_cells line:195 [INFO]deactive cell1
+[2020-07-31 17:39:41,690] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:CONFig:LTE:CELL1:ACTive 0;*OPC?
+[2020-07-31 17:39:54,688] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:39:54,840] KeySightUXM.py->sleep line:81 [INFO]sleep 20 second
+[2020-07-31 17:40:14,847] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL6?
+[2020-07-31 17:40:14,850] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL5?
+[2020-07-31 17:40:14,866] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL4?
+[2020-07-31 17:40:14,879] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL3?
+[2020-07-31 17:40:14,892] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL2?
+[2020-07-31 17:40:14,905] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:40:14,934] KeySightUXM.py->init_cell_NSA line:440 [INFO]initialize NSA cells
+[2020-07-31 17:40:14,934] KeySightUXM.py->config_lte_cell line:138 [INFO]#######cell_Parameter list is  ['FDD', 2, 900, 10]
+[2020-07-31 17:40:14,934] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DUPLex:MODE FDD
+[2020-07-31 17:40:14,935] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:BAND 2
+[2020-07-31 17:40:14,936] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:EARFcn 900
+[2020-07-31 17:40:14,936] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:BW BW10
+[2020-07-31 17:40:14,936] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:POWer:RSTP -65
+[2020-07-31 17:40:14,937] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:LTE:CELL1:MANual:POWer 0
+[2020-07-31 17:40:14,937] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:PHY:DL:ANTenna D2U2
+[2020-07-31 17:40:14,939] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:SECURITY:AUTH:KEY KEYS
+[2020-07-31 17:40:14,939] KeySightUXM.py->cells_reconfigure line:673 [INFO]reconfigure LTE cells
+[2020-07-31 17:40:14,940] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:POWer:CHANnel -32.22
+
+[2020-07-31 17:40:14,941] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:LTE:CELL1:MANual:POWer:DBMbw 7.78
+
+[2020-07-31 17:40:14,942] KeySightUXM.py->config_lte_cell line:138 [INFO]#######cell_Parameter list is  ['FDD', 12, 5095, 10]
+[2020-07-31 17:40:14,943] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:DUPLex:MODE FDD
+[2020-07-31 17:40:14,943] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:BAND 12
+[2020-07-31 17:40:14,944] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:DL:EARFcn 5095
+[2020-07-31 17:40:14,944] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:DL:BW BW10
+[2020-07-31 17:40:14,945] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:DL:POWer:RSTP -65
+[2020-07-31 17:40:14,946] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:LTE:CELL2:MANual:POWer 0
+[2020-07-31 17:40:14,946] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:PHY:DL:ANTenna D2U2
+[2020-07-31 17:40:14,946] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:SECURITY:AUTH:KEY KEYS
+[2020-07-31 17:40:14,947] KeySightUXM.py->cells_reconfigure line:673 [INFO]reconfigure LTE cells
+[2020-07-31 17:40:14,947] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:POWer:CHANnel -32.22
+
+[2020-07-31 17:40:14,948] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:LTE:CELL1:MANual:POWer:DBMbw 7.78
+
+[2020-07-31 17:40:14,949] KeySightUXM.py->config_NR_cell line:467 [INFO]#######cell_Parameter list is  ['FDD', 'n66']
+[2020-07-31 17:40:14,949] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:FREQuency:RANGE FR1
+[2020-07-31 17:40:14,951] KeySightUXM.py->sleep line:81 [INFO]sleep 5 second
+[2020-07-31 17:40:19,955] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:DUPLex:MODE FDD
+[2020-07-31 17:40:19,956] KeySightUXM.py->sleep line:81 [INFO]sleep 5 second
+[2020-07-31 17:40:24,957] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:BAND n66
+[2020-07-31 17:40:24,959] KeySightUXM.py->sleep line:81 [INFO]sleep 3 second
+[2020-07-31 17:40:27,962] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:SUBCarrier:SPACing:COMMon MU0
+[2020-07-31 17:40:27,964] KeySightUXM.py->sleep line:81 [INFO]sleep 5 second
+[2020-07-31 17:40:32,965] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:DL:BW BW20
+[2020-07-31 17:40:32,966] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:40:34,966] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:TESTChanLoc LOW
+[2020-07-31 17:40:34,967] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:40:36,968] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONfig:NR5G:CELL1:DL:MIMO:CONfig N2X2
+[2020-07-31 17:40:36,969] KeySightUXM.py->cells_reconfigure line:673 [INFO]reconfigure NR5G cells
+[2020-07-31 17:40:36,971] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:NR5G:CELL1:MANual:POWer 20
+
+[2020-07-31 17:40:36,972] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:NR5G:CELL1:MANual:POWer 23
+
+[2020-07-31 17:40:36,973] KeySightUXM.py->active_cells line:173 [INFO]active cell1
+[2020-07-31 17:40:36,974] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:CONFig:LTE:CELL1:ACTive 1;*OPC?
+[2020-07-31 17:40:41,949] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:40:41,975] KeySightUXM.py->active_cells line:173 [INFO]active cell2
+[2020-07-31 17:40:41,975] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:CONFig:LTE:CELL2:ACTive 1;*OPC?
+[2020-07-31 17:40:47,366] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL2?
+[2020-07-31 17:40:47,476] KeySightUXM.py->active_cells_NR line:593 [INFO]active nr cells
+[2020-07-31 17:40:47,477] KeySightUXM.py->active_cells_NR line:596 [INFO]active cell1
+[2020-07-31 17:40:47,478] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:CONFig:NR5G:CELL1:ACTive 1;*OPC?
+[2020-07-31 17:40:49,401] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:NR5G:CELL1?
+[2020-07-31 17:40:49,418] Modem_CA_Verify_Keysight.py->trigger_attach line:401 [INFO]trigger attach on UE
+[2020-07-31 17:40:49,419] Modem_CA_Verify_Keysight.py->restart_phone line:494 [INFO]restart phone
+[2020-07-31 17:40:49,419] Modem_CA_Verify_Keysight.py->sleep line:255 [INFO]sleep 5 second
+[2020-07-31 17:40:54,835] Modem_CA_Verify_Keysight.py->restart_phone line:508 [ERROR]restart phone unsuccessfully
+[2020-07-31 17:40:54,836] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:40:54,838] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:40:56,839] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:40:56,844] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:40:58,845] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:40:58,847] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:00,848] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:00,851] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:02,851] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:02,853] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:04,854] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:04,857] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:06,858] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:06,860] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:08,861] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:08,864] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:10,865] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:10,871] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:12,872] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:12,877] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:14,878] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:14,881] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:16,882] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:16,885] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:18,887] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:18,888] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:20,890] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:20,892] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:22,892] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:22,896] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:24,897] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:24,902] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:26,904] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:26,909] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:28,910] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:28,914] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:30,916] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:30,919] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:32,922] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:32,924] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:34,929] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:34,930] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:36,936] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:36,940] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:38,943] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:38,945] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:40,951] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:40,953] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:42,956] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:42,959] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:44,965] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:44,967] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:46,970] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:46,973] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:48,982] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:48,984] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:50,987] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:50,991] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:52,993] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:41:52,996] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:41:54,999] Modem_CA_Verify_Keysight.py->trigger_attach line:423 [ERROR]UE attach failed
+[2020-07-31 17:41:54,999] Modem_CA_Verify_Keysight.py->procedure_NSA line:739 [ERROR]LTE attach failed
+[2020-07-31 17:41:54,999] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_173919\CA_TEST.csv
+[2020-07-31 17:41:55,008] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 2A-12A-n66A #############
+[2020-07-31 17:41:55,008] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell = band2 ###############
+[2020-07-31 17:41:55,008] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:41:55,008] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:41:55,008] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = FAIL ###################
+[2020-07-31 17:41:55,008] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:41:55,008] KeySightUXM.py->deactive_cells line:195 [INFO]deactive cell1
+[2020-07-31 17:41:55,009] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:CONFig:LTE:CELL1:ACTive 0;*OPC?
+[2020-07-31 17:42:07,872] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:42:08,256] KeySightUXM.py->sleep line:81 [INFO]sleep 20 second
+[2020-07-31 17:42:28,258] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL6?
+[2020-07-31 17:42:28,261] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL5?
+[2020-07-31 17:42:28,277] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL4?
+[2020-07-31 17:42:28,290] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL3?
+[2020-07-31 17:42:28,304] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL2?
+[2020-07-31 17:42:28,318] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:42:28,332] KeySightUXM.py->init_cell_NSA line:440 [INFO]initialize NSA cells
+[2020-07-31 17:42:28,332] KeySightUXM.py->config_lte_cell line:138 [INFO]#######cell_Parameter list is  ['FDD', 2, 900, 10]
+[2020-07-31 17:42:28,332] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DUPLex:MODE FDD
+[2020-07-31 17:42:28,333] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:BAND 2
+[2020-07-31 17:42:28,333] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:EARFcn 900
+[2020-07-31 17:42:28,334] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:BW BW10
+[2020-07-31 17:42:28,334] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:POWer:RSTP -65
+[2020-07-31 17:42:28,334] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:LTE:CELL1:MANual:POWer 0
+[2020-07-31 17:42:28,335] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:PHY:DL:ANTenna D2U2
+[2020-07-31 17:42:28,336] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:SECURITY:AUTH:KEY KEYS
+[2020-07-31 17:42:28,336] KeySightUXM.py->cells_reconfigure line:673 [INFO]reconfigure LTE cells
+[2020-07-31 17:42:28,337] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:POWer:CHANnel -32.22
+
+[2020-07-31 17:42:28,337] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:LTE:CELL1:MANual:POWer:DBMbw 7.78
+
+[2020-07-31 17:42:28,338] KeySightUXM.py->config_lte_cell line:138 [INFO]#######cell_Parameter list is  ['FDD', 12, 5095, 10]
+[2020-07-31 17:42:28,338] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:DUPLex:MODE FDD
+[2020-07-31 17:42:28,338] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:BAND 12
+[2020-07-31 17:42:28,339] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:DL:EARFcn 5095
+[2020-07-31 17:42:28,339] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:DL:BW BW10
+[2020-07-31 17:42:28,340] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:DL:POWer:RSTP -65
+[2020-07-31 17:42:28,340] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:LTE:CELL2:MANual:POWer 0
+[2020-07-31 17:42:28,340] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:PHY:DL:ANTenna D2U2
+[2020-07-31 17:42:28,341] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:SECURITY:AUTH:KEY KEYS
+[2020-07-31 17:42:28,341] KeySightUXM.py->cells_reconfigure line:673 [INFO]reconfigure LTE cells
+[2020-07-31 17:42:28,342] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:POWer:CHANnel -32.22
+
+[2020-07-31 17:42:28,343] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:LTE:CELL1:MANual:POWer:DBMbw 7.78
+
+[2020-07-31 17:42:28,344] KeySightUXM.py->config_NR_cell line:467 [INFO]#######cell_Parameter list is  ['FDD', 'n66']
+[2020-07-31 17:42:28,344] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:FREQuency:RANGE FR1
+[2020-07-31 17:42:28,345] KeySightUXM.py->sleep line:81 [INFO]sleep 5 second
+[2020-07-31 17:42:33,346] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:DUPLex:MODE FDD
+[2020-07-31 17:42:33,348] KeySightUXM.py->sleep line:81 [INFO]sleep 5 second
+[2020-07-31 17:42:38,349] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:BAND n66
+[2020-07-31 17:42:38,352] KeySightUXM.py->sleep line:81 [INFO]sleep 3 second
+[2020-07-31 17:42:41,353] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:SUBCarrier:SPACing:COMMon MU0
+[2020-07-31 17:42:41,354] KeySightUXM.py->sleep line:81 [INFO]sleep 5 second
+[2020-07-31 17:42:46,355] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:DL:BW BW20
+[2020-07-31 17:42:46,356] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:42:48,357] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:TESTChanLoc LOW
+[2020-07-31 17:42:48,359] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:42:50,360] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONfig:NR5G:CELL1:DL:MIMO:CONfig N2X2
+[2020-07-31 17:42:50,363] KeySightUXM.py->cells_reconfigure line:673 [INFO]reconfigure NR5G cells
+[2020-07-31 17:42:50,366] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:NR5G:CELL1:MANual:POWer 20
+
+[2020-07-31 17:42:50,369] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:NR5G:CELL1:MANual:POWer 23
+
+[2020-07-31 17:42:50,373] KeySightUXM.py->active_cells line:173 [INFO]active cell1
+[2020-07-31 17:42:50,374] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:CONFig:LTE:CELL1:ACTive 1;*OPC?
+[2020-07-31 17:42:55,391] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:42:55,602] KeySightUXM.py->active_cells line:173 [INFO]active cell2
+[2020-07-31 17:42:55,603] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:CONFig:LTE:CELL2:ACTive 1;*OPC?
+[2020-07-31 17:43:00,882] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL2?
+[2020-07-31 17:43:00,994] KeySightUXM.py->active_cells_NR line:593 [INFO]active nr cells
+[2020-07-31 17:43:00,995] KeySightUXM.py->active_cells_NR line:596 [INFO]active cell1
+[2020-07-31 17:43:00,995] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:CONFig:NR5G:CELL1:ACTive 1;*OPC?
+[2020-07-31 17:43:02,992] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:NR5G:CELL1?
+[2020-07-31 17:43:03,012] Modem_CA_Verify_Keysight.py->trigger_attach line:401 [INFO]trigger attach on UE
+[2020-07-31 17:43:03,014] Modem_CA_Verify_Keysight.py->restart_phone line:494 [INFO]restart phone
+[2020-07-31 17:43:03,014] Modem_CA_Verify_Keysight.py->sleep line:255 [INFO]sleep 5 second
+[2020-07-31 17:43:08,483] Modem_CA_Verify_Keysight.py->restart_phone line:508 [ERROR]restart phone unsuccessfully
+[2020-07-31 17:43:08,483] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:08,485] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:10,490] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:10,492] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:12,497] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:12,498] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:14,506] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:14,508] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:16,512] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:16,514] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:18,518] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:18,519] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:20,527] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:20,529] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:22,531] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:22,534] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:24,536] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:24,538] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:26,544] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:26,546] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:28,551] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:28,552] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:30,553] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:30,558] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:32,560] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:32,564] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:34,567] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:34,569] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:36,570] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:36,576] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:38,577] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:38,580] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:40,582] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:40,584] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:42,585] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:42,587] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:44,587] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:44,590] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:46,591] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:46,595] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:48,596] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:48,600] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:50,601] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:50,603] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:52,604] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:52,606] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:54,607] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:54,609] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:56,611] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:56,613] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:43:58,614] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:43:58,616] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:44:00,616] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:44:00,618] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:44:02,623] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:44:02,625] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:44:04,631] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:44:04,633] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:44:06,638] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:44:06,640] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:44:08,641] Modem_CA_Verify_Keysight.py->trigger_attach line:423 [ERROR]UE attach failed
+[2020-07-31 17:44:08,641] Modem_CA_Verify_Keysight.py->procedure_NSA line:739 [ERROR]LTE attach failed
+[2020-07-31 17:44:08,641] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_173919\CA_TEST.csv
+[2020-07-31 17:44:08,647] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 2A-12A-n66A #############
+[2020-07-31 17:44:08,647] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell = band2 ###############
+[2020-07-31 17:44:08,648] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:44:08,648] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 1###################
+[2020-07-31 17:44:08,648] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = FAIL ###################
+[2020-07-31 17:44:08,648] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 2A-66A-n5A
+[2020-07-31 17:44:08,648] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:44:08,648] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:44:08,648] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:44:08,649] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 2A-66A-n5A 
+[2020-07-31 17:44:08,649] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 
+[2020-07-31 17:44:08,649] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:44:08,649] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾2A-66A-n5A¡¿#######################
+
+[2020-07-31 17:44:08,650] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:44:08,652] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['2A', '66A', 'n5A']
+[2020-07-31 17:44:08,652] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['2A', '66A', 'n5A']
+[2020-07-31 17:44:08,652] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['2A', '66A', 'n5A']
+[2020-07-31 17:44:08,653] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['2A', '66A', 'n5A']
+[2020-07-31 17:44:08,653] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['2A', '66A', 'n5A']
+[2020-07-31 17:44:08,653] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['2A', '66A', 'n5A']
+[2020-07-31 17:44:08,653] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['2A', '66A', 'n5A']
+[2020-07-31 17:44:08,653] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['2A', '66A', 'n5A']
+[2020-07-31 17:44:08,658] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:44:08,659] KeySightUXM.py->deactive_cells line:195 [INFO]deactive cell1
+[2020-07-31 17:44:08,660] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:CONFig:LTE:CELL1:ACTive 0;*OPC?
+[2020-07-31 17:44:21,467] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:44:21,846] KeySightUXM.py->sleep line:81 [INFO]sleep 20 second
+[2020-07-31 17:44:41,853] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL6?
+[2020-07-31 17:44:41,857] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL5?
+[2020-07-31 17:44:41,871] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL4?
+[2020-07-31 17:44:41,885] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL3?
+[2020-07-31 17:44:41,899] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL2?
+[2020-07-31 17:44:41,913] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:44:41,926] KeySightUXM.py->init_cell_NSA line:440 [INFO]initialize NSA cells
+[2020-07-31 17:44:41,926] KeySightUXM.py->config_lte_cell line:138 [INFO]#######cell_Parameter list is  ['FDD', 2, 900, 10]
+[2020-07-31 17:44:41,927] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DUPLex:MODE FDD
+[2020-07-31 17:44:41,927] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:BAND 2
+[2020-07-31 17:44:41,928] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:EARFcn 900
+[2020-07-31 17:44:41,928] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:BW BW10
+[2020-07-31 17:44:41,929] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:POWer:RSTP -65
+[2020-07-31 17:44:41,929] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:LTE:CELL1:MANual:POWer 0
+[2020-07-31 17:44:41,929] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:PHY:DL:ANTenna D2U2
+[2020-07-31 17:44:41,930] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:SECURITY:AUTH:KEY KEYS
+[2020-07-31 17:44:41,931] KeySightUXM.py->cells_reconfigure line:673 [INFO]reconfigure LTE cells
+[2020-07-31 17:44:41,932] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:POWer:CHANnel -32.22
+
+[2020-07-31 17:44:41,932] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:LTE:CELL1:MANual:POWer:DBMbw 7.78
+
+[2020-07-31 17:44:41,933] KeySightUXM.py->config_lte_cell line:138 [INFO]#######cell_Parameter list is  ['FDD', 66, 66486, 10]
+[2020-07-31 17:44:41,933] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:DUPLex:MODE FDD
+[2020-07-31 17:44:41,934] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:BAND 66
+[2020-07-31 17:44:41,935] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:DL:EARFcn 66486
+[2020-07-31 17:44:41,936] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:DL:BW BW10
+[2020-07-31 17:44:41,936] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:DL:POWer:RSTP -65
+[2020-07-31 17:44:41,936] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:LTE:CELL2:MANual:POWer 0
+[2020-07-31 17:44:41,937] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL2:PHY:DL:ANTenna D2U2
+[2020-07-31 17:44:41,938] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:SECURITY:AUTH:KEY KEYS
+[2020-07-31 17:44:41,938] KeySightUXM.py->cells_reconfigure line:673 [INFO]reconfigure LTE cells
+[2020-07-31 17:44:41,939] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:LTE:CELL1:DL:POWer:CHANnel -32.22
+
+[2020-07-31 17:44:41,939] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:LTE:CELL1:MANual:POWer:DBMbw 7.78
+
+[2020-07-31 17:44:41,940] KeySightUXM.py->config_NR_cell line:467 [INFO]#######cell_Parameter list is  ['FDD', 'n5']
+[2020-07-31 17:44:41,940] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:FREQuency:RANGE FR1
+[2020-07-31 17:44:41,940] KeySightUXM.py->sleep line:81 [INFO]sleep 5 second
+[2020-07-31 17:44:46,948] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:DUPLex:MODE FDD
+[2020-07-31 17:44:46,949] KeySightUXM.py->sleep line:81 [INFO]sleep 5 second
+[2020-07-31 17:44:51,951] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:BAND n5
+[2020-07-31 17:44:51,953] KeySightUXM.py->sleep line:81 [INFO]sleep 3 second
+[2020-07-31 17:44:54,954] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:SUBCarrier:SPACing:COMMon MU0
+[2020-07-31 17:44:54,955] KeySightUXM.py->sleep line:81 [INFO]sleep 5 second
+[2020-07-31 17:44:59,956] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:DL:BW BW20
+[2020-07-31 17:44:59,958] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:01,959] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONFig:NR5G:CELL1:TESTChanLoc LOW
+[2020-07-31 17:45:01,961] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:03,969] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:CONfig:NR5G:CELL1:DL:MIMO:CONfig N2X2
+[2020-07-31 17:45:03,971] KeySightUXM.py->cells_reconfigure line:673 [INFO]reconfigure NR5G cells
+[2020-07-31 17:45:03,974] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:NR5G:CELL1:MANual:POWer 20
+
+[2020-07-31 17:45:03,975] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : RFANalyzer:NR5G:CELL1:MANual:POWer 23
+
+[2020-07-31 17:45:03,976] KeySightUXM.py->active_cells line:173 [INFO]active cell1
+[2020-07-31 17:45:03,977] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:CONFig:LTE:CELL1:ACTive 1;*OPC?
+[2020-07-31 17:45:08,984] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:09,005] KeySightUXM.py->active_cells line:173 [INFO]active cell2
+[2020-07-31 17:45:09,007] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:CONFig:LTE:CELL2:ACTive 1;*OPC?
+[2020-07-31 17:45:14,450] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL2?
+[2020-07-31 17:45:14,550] KeySightUXM.py->active_cells_NR line:593 [INFO]active nr cells
+[2020-07-31 17:45:14,551] KeySightUXM.py->active_cells_NR line:596 [INFO]active cell1
+[2020-07-31 17:45:14,552] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:CONFig:NR5G:CELL1:ACTive 1;*OPC?
+[2020-07-31 17:45:16,383] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:NR5G:CELL1?
+[2020-07-31 17:45:16,399] Modem_CA_Verify_Keysight.py->trigger_attach line:401 [INFO]trigger attach on UE
+[2020-07-31 17:45:16,400] Modem_CA_Verify_Keysight.py->restart_phone line:494 [INFO]restart phone
+[2020-07-31 17:45:16,400] Modem_CA_Verify_Keysight.py->sleep line:255 [INFO]sleep 5 second
+[2020-07-31 17:45:21,767] Modem_CA_Verify_Keysight.py->restart_phone line:508 [ERROR]restart phone unsuccessfully
+[2020-07-31 17:45:21,767] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:21,771] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:23,772] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:23,776] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:25,779] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:25,783] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:27,789] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:27,794] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:29,798] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:29,800] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:31,806] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:31,809] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:33,818] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:33,821] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:35,827] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:35,831] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:37,840] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:37,843] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:39,845] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:39,848] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:41,857] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:41,859] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:43,865] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:43,868] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:45,873] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:45,878] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:47,888] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:47,892] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:49,897] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:49,904] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:51,914] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:51,918] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:53,923] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:53,927] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:55,934] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:55,936] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:57,942] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:57,947] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:45:59,954] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:45:59,958] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:46:01,959] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:46:01,962] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:46:03,971] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:46:03,974] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:46:05,978] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:46:05,981] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:46:07,990] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:46:07,991] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:46:09,994] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:46:09,996] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:46:11,997] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:46:11,999] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:46:14,009] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:46:14,014] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:46:16,022] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:46:16,024] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:46:18,031] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:46:18,033] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:46:20,040] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:46:20,043] KeySightUXM.py->sleep line:81 [INFO]sleep 2 second
+[2020-07-31 17:46:22,047] Modem_CA_Verify_Keysight.py->trigger_attach line:423 [ERROR]UE attach failed
+[2020-07-31 17:46:22,048] Modem_CA_Verify_Keysight.py->procedure_NSA line:739 [ERROR]LTE attach failed
+[2020-07-31 17:46:22,049] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_173919\CA_TEST.csv
+[2020-07-31 17:46:22,072] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 2A-66A-n5A #############
+[2020-07-31 17:46:22,073] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell = band2 ###############
+[2020-07-31 17:46:22,073] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:46:22,074] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:46:22,074] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = FAIL ###################
+[2020-07-31 17:46:22,074] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:46:22,075] KeySightUXM.py->deactive_cells line:195 [INFO]deactive cell1
+[2020-07-31 17:46:22,075] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:CONFig:LTE:CELL1:ACTive 0;*OPC?
+[2020-07-31 17:46:34,641] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:STATus:LTE:CELL1?
+[2020-07-31 17:46:35,019] KeySightUXM.py->sleep line:81 [INFO]sleep 20 second

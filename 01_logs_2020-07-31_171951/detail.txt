@@ -1,0 +1,763 @@
+[2020-07-31 17:19:51,327] test_config.py->create_default_params line:21 [ERROR]Creating default configuration
+[2020-07-31 17:19:51,327] test_config.py->read_config_file line:58 [ERROR]read test config from file D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\02_config\test_config.ini
+[2020-07-31 17:19:51,328] test_config.py->read_config_file line:76 [INFO]{'ProjectName': 'Kiev', 'device_name': 'KeysightUXM', 'tc_module': 'Modem_CA_Verify_Keysight', 'test_config_name': 'test_config.ini', 'manual': False, 'root_path': 'D:\\PAT\\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release', 'config_path': 'D:\\PAT\\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\\02_config', 'CA_tpye': 'LTE', 'ca_combs_name': 'ca_combs.xlsx', 'ca_parameter_load_type': 'auto', 'document_path': 'D:\\PAT\\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\\03_document', 'auto_get_qualcomm_port': True, 'qualcomm_port': '21', 'phone_control_method': 'adb', 'repeat_while_fail': False, 'is_loop_pcell': False, 'channel_config_nr': ['LOW', 'MID', 'HIGH'], 'scpi_command_extra_name': 'scpi_command_extra.txt', 'is_tx_power_test': False, 'is_throughput_test': False, 'sim_card_type': 'keysight', 'Instrument IP': '192.168.0.2', 'guide_document_name': 'user_guide.docx', 'test_pause': False, 'test_stop': False, 'scpi_command': 'D:\\PAT\\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\\04_scpi_command', 'combos_path': 'D:\\PAT\\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\\05_combos', '03_documnet': 'D:\\PAT\\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\\03_document', 'lte_4X4_mimo_band': [], 'mimo_list': '1111111', 'NR_TDD_BW': '60', 'is_restart_phone': True, 'device_ta': 'TCPIP0::192.168.0.2::hislip2::INSTR', 'device_xapp_ip': 'TCPIP0::192.168.0.2::hislip1::INSTR', 'device2_name': 'CMW500', 'GPIB': 'GPIB0::20::INSTR', 'repeat_fail_max': '1', 'NR_4X4_mimo_band': ['n1', 'n3', 'n7', 'n38', 'n41', 'n77', 'n78'], 'NR_FDD_BW': '20', 'nr_band_list': ['n1', 'n3', 'n5', 'n7', 'n8', 'n12', 'n20', 'n25', 'n28', 'n29', 'n34', 'n38', 'n39', 'n40', 'n41', 'n48', 'n50', 'n51', 'n65', 'n66', 'n70', 'n71', 'n74', 'n75', 'n76', 'n77', 'n78', 'n79', 'n41', 'n261', 'n260', 'n261', 'n257', 'n258'], 'restart_phone': True}
+[2020-07-31 17:19:51,340] main.py->__init__ line:57 [INFO]this is farther class TestFramework
+[2020-07-31 17:20:00,576] KeySightUXM.py->__init__ line:30 [INFO]connect to keysight UXM: TCPIP0::192.168.0.2::hislip2::INSTR
+[2020-07-31 17:21:24,371] main.py->get_tc_module line:64 [INFO]get tc module
+[2020-07-31 17:21:24,371] Modem_CA_Verify_Keysight.py->__init__ line:35 [INFO]*** module Modem_CA_Verify_Keysight constructor
+[2020-07-31 17:21:24,371] Modem_CA_Verify_Keysight.py->__init__ line:40 [INFO]True
+[2020-07-31 17:21:24,372] Modem_CA_Verify_Keysight.py->read_nr_band_from_config line:123 [INFO]{'1A': (1, 300, 10), '1AA': (1, 500, 20), '1C': (1, 201, 20), '1CC': (1, 399, 20), '2A': (2, 900, 10), '2AA': (2, 1150, 10), '2C': (2, 801, 20), '2CC': (2, 999, 20), '3A': (3, 1300, 20), '3AA': (3, 1775, 20), '3C': (3, 1481, 10), '3CC': (3, 1625, 20), '4A': (4, 2175, 10), '4AA': (4, 2350, 10), '5A': (5, 2476, 10), '5B': (5, 2476, 10), '5BB': (5, 2575, 10), '5AA': (5, 2600, 10), '7A': (7, 3100, 10), '7AA': (7, 3400, 10), '7C': (7, 3006, 10), '7CC': (7, 3150, 20), '7B': (7, 3076, 15), '7BB': (7, 3169, 5), '8A': (8, 3625, 10), '12A': (12, 5095, 10), '12B': (12, 5048, 5), '12BB': (12, 5120, 10), '13A': (13, 5230, 10), '14A': (14, 5330, 10), '17A': (17, 5790, 10), '18A': (18, 5925, 10), '19A': (19, 6075, 10), '20A': (20, 6300, 10), '25A': (25, 8140, 20), '25AA': (25, 8590, 20), '26A': (26, 8990, 10), '26AA': (26, 8990, 5), '28A': (28, 9435, 10), '29A': (29, 9715, 10), '30A': (30, 9820, 10), '32A': (32, 10140, 10), '38A': (38, 38000, 10), '38C': (38, 37850, 20), '38CC': (38, 38048, 20), '40A': (40, 39150, 10), '40AA': (40, 39600, 10), '40C': (40, 39249, 20), '40CC': (40, 39051, 20), '40D': (40, '38952', 20), '40DD': (40, 39150, 20), '40DDD': (40, 39348, 20), '46A': (46, 46890), '46AA': (46, 54340, 20), '46C': (46, 50692, 20), '46CC': (46, 50890, 20), '46D': (46, 53942, 20), '46DD': (46, 54140, 20), '46DDD': (46, 54338, 20), '66B': (66, 66837, 10), '66BB': (66, 66936, 10), '66A': (66, 66486, 10), '66AA': (66, 67086, 10), '66C': (66, 66787, 20), '66CC': (66, 66985, 20), '66D': (66, 66688, 20), '66DD': (66, 66886, 20), '66DDD': (66, 67084, 20), '71A': (71, 68765, 10), '41C': (41, 40521, 20), '41CC': (41, 40719, 20), '41A': (41, 40620, 20), '41AA': (41, 41540, 10), '41D': (41, 40422, 20), '41DD': (41, 40620, 20), '41DDD': (41, 40818, 20), '41E': (41, 39705, 10), '41EE': (41, 39849, 20), '41EEE': (41, 41292, 20), '41EEEE': (41, 41490, 20), 'n1A': ['n1'], 'n2A': ('n2', 390000, 20), 'n3A': ['n3'], 'n5A': ['n5'], 'n7A': ['n7'], 'n66A': ['n66'], 'n41A': ['n41'], 'n71A': ['n71'], 'n28A': ['n28'], 'n78A': ['n78'], 'n25A': ['n25'], 'n12A': ['n12'], 'n8A': ['n8'], 'n20A': ['n20'], 'n29A': ['n29'], 'n34A': ['n34'], 'n38A': ['n38'], 'n39A': ['n39'], 'n40A': ['n40'], 'n48A': ['n48'], 'n50A': ['n50'], 'n51A': ['n51'], 'n65A': ['n65'], 'n70A': ['n70'], 'n74A': ['n74'], 'n75A': ['n75'], 'n76A': ['n76'], 'n77A': ['n77'], 'n79A': ['n79'], 'n261A': ['n261'], 'n260A': ['n260'], 'n257A': ['n257'], 'n258A': ['n258']}
+[2020-07-31 17:21:24,372] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:24,377] Modem_CA_Verify_Keysight.py->main line:284 [INFO]########################################
+[2020-07-31 17:21:24,378] Modem_CA_Verify_Keysight.py->main line:285 [INFO]#########main starts#########
+[2020-07-31 17:21:24,378] Modem_CA_Verify_Keysight.py->main line:286 [INFO]########################################
+[2020-07-31 17:21:24,413] KeySightUXM.py->__init__ line:30 [INFO]connect to keysight UXM: TCPIP0::192.168.0.2::hislip2::INSTR
+[2020-07-31 17:21:24,483] Modem_CA_Verify_Keysight.py->sleep line:255 [INFO]sleep 5 second
+[2020-07-31 17:21:29,616] Modem_CA_Verify_Keysight.py->read_conf line:140 [INFO]nocol:3
+[2020-07-31 17:21:29,616] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 1A-n3A
+[2020-07-31 17:21:29,616] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:21:29,617] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]44
+[2020-07-31 17:21:29,617] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 1A-n3A 
+[2020-07-31 17:21:29,617] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 44
+[2020-07-31 17:21:29,618] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:21:29,618] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾1A-n3A¡¿#######################
+
+[2020-07-31 17:21:29,618] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:21:29,618] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['1A', 'n3A']
+[2020-07-31 17:21:29,618] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', 'n3A']
+[2020-07-31 17:21:29,618] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', 'n3A']
+[2020-07-31 17:21:29,618] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', 'n3A']
+[2020-07-31 17:21:29,618] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', 'n3A']
+[2020-07-31 17:21:29,619] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['1A', 'n3A']
+[2020-07-31 17:21:29,619] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:21:29,619] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:21:29,619] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:29,621] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 1A-n3A #############
+[2020-07-31 17:21:29,621] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:21:29,621] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:21:29,621] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:21:29,621] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:21:29,621] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 7A-n3A
+[2020-07-31 17:21:29,622] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:21:29,622] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]44
+[2020-07-31 17:21:29,622] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 7A-n3A 
+[2020-07-31 17:21:29,622] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 44
+[2020-07-31 17:21:29,623] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:21:29,623] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾7A-n3A¡¿#######################
+
+[2020-07-31 17:21:29,623] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:21:29,623] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['7A', 'n3A']
+[2020-07-31 17:21:29,623] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['7A', 'n3A']
+[2020-07-31 17:21:29,623] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['7A', 'n3A']
+[2020-07-31 17:21:29,623] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['7A', 'n3A']
+[2020-07-31 17:21:29,623] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['7A', 'n3A']
+[2020-07-31 17:21:29,623] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['7A', 'n3A']
+[2020-07-31 17:21:29,624] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:21:29,624] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:21:29,624] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:29,625] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 7A-n3A #############
+[2020-07-31 17:21:29,625] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:21:29,625] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:21:29,626] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:21:29,626] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:21:29,626] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 8A-n3A
+[2020-07-31 17:21:29,626] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]2
+[2020-07-31 17:21:29,626] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]24
+[2020-07-31 17:21:29,627] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 8A-n3A 
+[2020-07-31 17:21:29,627] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 24
+[2020-07-31 17:21:29,627] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:21:29,628] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾8A-n3A¡¿#######################
+
+[2020-07-31 17:21:29,628] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:21:29,628] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['8A', 'n3A']
+[2020-07-31 17:21:29,628] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['8A', 'n3A']
+[2020-07-31 17:21:29,628] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['8A', 'n3A']
+[2020-07-31 17:21:29,629] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['8A', 'n3A']
+[2020-07-31 17:21:29,629] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['8A', 'n3A']
+[2020-07-31 17:21:29,629] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['8A', 'n3A']
+[2020-07-31 17:21:29,630] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:21:29,630] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:21:29,630] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:29,645] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 8A-n3A #############
+[2020-07-31 17:21:29,645] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:21:29,645] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:21:29,645] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:21:29,646] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:21:29,646] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 8A-n1A
+[2020-07-31 17:21:29,646] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]2
+[2020-07-31 17:21:29,646] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]24
+[2020-07-31 17:21:29,647] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 8A-n1A 
+[2020-07-31 17:21:29,647] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 24
+[2020-07-31 17:21:29,647] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:21:29,647] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾8A-n1A¡¿#######################
+
+[2020-07-31 17:21:29,647] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:21:29,648] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['8A', 'n1A']
+[2020-07-31 17:21:29,648] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['8A', 'n1A']
+[2020-07-31 17:21:29,648] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['8A', 'n1A']
+[2020-07-31 17:21:29,648] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['8A', 'n1A']
+[2020-07-31 17:21:29,648] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['8A', 'n1A']
+[2020-07-31 17:21:29,648] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['8A', 'n1A']
+[2020-07-31 17:21:29,650] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:21:29,650] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:21:29,650] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:29,653] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 8A-n1A #############
+[2020-07-31 17:21:29,654] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:21:29,654] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:21:29,654] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:21:29,654] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:21:29,655] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 3A-3A-7A-n1A
+[2020-07-31 17:21:29,655] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:21:29,655] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]42
+[2020-07-31 17:21:29,656] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]424
+[2020-07-31 17:21:29,656] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4244
+[2020-07-31 17:21:29,658] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 3A-3A-7A-n1A 
+[2020-07-31 17:21:29,658] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 4244
+[2020-07-31 17:21:29,659] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:21:29,659] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾3A-3A-7A-n1A¡¿#######################
+
+[2020-07-31 17:21:29,659] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:21:29,661] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,661] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,661] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,661] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,662] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,662] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:21:29,662] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,662] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:21:29,662] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,662] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:21:29,664] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:21:29,665] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:21:29,665] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:29,677] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 3A-3A-7A-n1A #############
+[2020-07-31 17:21:29,677] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:21:29,677] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:21:29,677] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:21:29,677] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:21:29,678] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 3A-3A-7A-n1A
+[2020-07-31 17:21:29,678] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:21:29,678] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]42
+[2020-07-31 17:21:29,678] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]424
+[2020-07-31 17:21:29,678] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4244
+[2020-07-31 17:21:29,678] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 3A-3A-7A-n1A 
+[2020-07-31 17:21:29,679] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 4244
+[2020-07-31 17:21:29,679] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:21:29,679] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾3A-3A-7A-n1A¡¿#######################
+
+[2020-07-31 17:21:29,680] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:21:29,680] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,681] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,681] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,681] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,681] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,681] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:21:29,681] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,681] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:21:29,682] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,682] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:21:29,683] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:21:29,683] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:21:29,683] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:29,685] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 3A-3A-7A-n1A #############
+[2020-07-31 17:21:29,685] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:21:29,685] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:21:29,685] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:21:29,685] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:21:29,685] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 3A-3A-7A-n1A
+[2020-07-31 17:21:29,686] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:21:29,686] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]42
+[2020-07-31 17:21:29,686] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]424
+[2020-07-31 17:21:29,686] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4244
+[2020-07-31 17:21:29,686] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 3A-3A-7A-n1A 
+[2020-07-31 17:21:29,687] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 4244
+[2020-07-31 17:21:29,687] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:21:29,687] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾3A-3A-7A-n1A¡¿#######################
+
+[2020-07-31 17:21:29,687] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:21:29,688] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,688] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,688] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,688] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,688] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,688] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:21:29,689] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,689] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:21:29,689] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:21:29,689] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:21:29,690] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:21:29,690] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:21:29,690] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:29,694] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 3A-3A-7A-n1A #############
+[2020-07-31 17:21:29,694] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:21:29,694] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:21:29,694] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:21:29,694] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:21:29,695] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 1A-3A-3A-n7A
+[2020-07-31 17:21:29,695] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:21:29,695] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]42
+[2020-07-31 17:21:29,695] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]422
+[2020-07-31 17:21:29,695] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4224
+[2020-07-31 17:21:29,696] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 1A-3A-3A-n7A 
+[2020-07-31 17:21:29,696] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 4224
+[2020-07-31 17:21:29,696] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:21:29,696] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾1A-3A-3A-n7A¡¿#######################
+
+[2020-07-31 17:21:29,696] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:21:29,697] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,697] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,698] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,698] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,698] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,698] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,698] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,698] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3AA', 'n7A']
+[2020-07-31 17:21:29,698] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,698] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['1A', '3A', '3AA', 'n7A']
+[2020-07-31 17:21:29,699] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:21:29,699] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:21:29,699] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:29,701] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 1A-3A-3A-n7A #############
+[2020-07-31 17:21:29,702] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:21:29,702] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:21:29,702] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:21:29,702] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:21:29,702] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 1A-3A-3A-n7A
+[2020-07-31 17:21:29,702] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:21:29,703] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]42
+[2020-07-31 17:21:29,703] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]422
+[2020-07-31 17:21:29,703] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4224
+[2020-07-31 17:21:29,703] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 1A-3A-3A-n7A 
+[2020-07-31 17:21:29,703] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 4224
+[2020-07-31 17:21:29,704] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:21:29,704] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾1A-3A-3A-n7A¡¿#######################
+
+[2020-07-31 17:21:29,704] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:21:29,705] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,705] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,705] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,705] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,705] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,706] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,706] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,706] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3AA', 'n7A']
+[2020-07-31 17:21:29,706] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,707] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['1A', '3A', '3AA', 'n7A']
+[2020-07-31 17:21:29,707] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:21:29,707] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:21:29,707] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:29,710] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 1A-3A-3A-n7A #############
+[2020-07-31 17:21:29,710] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:21:29,710] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:21:29,710] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:21:29,710] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:21:29,711] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 1A-3A-3A-n7A
+[2020-07-31 17:21:29,711] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]2
+[2020-07-31 17:21:29,711] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]24
+[2020-07-31 17:21:29,711] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]244
+[2020-07-31 17:21:29,711] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]2444
+[2020-07-31 17:21:29,711] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 1A-3A-3A-n7A 
+[2020-07-31 17:21:29,711] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 2444
+[2020-07-31 17:21:29,712] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:21:29,712] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾1A-3A-3A-n7A¡¿#######################
+
+[2020-07-31 17:21:29,712] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:21:29,713] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,713] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,713] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,713] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,713] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,713] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,714] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,714] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3AA', 'n7A']
+[2020-07-31 17:21:29,714] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:21:29,714] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['1A', '3A', '3AA', 'n7A']
+[2020-07-31 17:21:29,714] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:21:29,715] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:21:29,715] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:29,716] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 1A-3A-3A-n7A #############
+[2020-07-31 17:21:29,717] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:21:29,717] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:21:29,717] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:21:29,717] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:21:29,718] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 1A-n7A
+[2020-07-31 17:21:29,718] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:21:29,718] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:21:29,719] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 1A-n7A 
+[2020-07-31 17:21:29,719] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 
+[2020-07-31 17:21:29,720] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:21:29,720] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾1A-n7A¡¿#######################
+
+[2020-07-31 17:21:29,721] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:21:29,722] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['1A', 'n7A']
+[2020-07-31 17:21:29,722] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', 'n7A']
+[2020-07-31 17:21:29,722] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', 'n7A']
+[2020-07-31 17:21:29,722] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', 'n7A']
+[2020-07-31 17:21:29,723] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', 'n7A']
+[2020-07-31 17:21:29,723] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['1A', 'n7A']
+[2020-07-31 17:21:29,724] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:21:29,724] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:21:29,725] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:29,729] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 1A-n7A #############
+[2020-07-31 17:21:29,730] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:21:29,730] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:21:29,730] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:21:29,730] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:21:29,730] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 3A-n41A
+[2020-07-31 17:21:29,730] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:21:29,731] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:21:29,731] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 3A-n41A 
+[2020-07-31 17:21:29,731] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 
+[2020-07-31 17:21:29,731] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:21:29,731] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾3A-n41A¡¿#######################
+
+[2020-07-31 17:21:29,732] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:21:29,733] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['3A', 'n41A']
+[2020-07-31 17:21:29,733] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', 'n41A']
+[2020-07-31 17:21:29,733] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', 'n41A']
+[2020-07-31 17:21:29,733] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', 'n41A']
+[2020-07-31 17:21:29,733] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', 'n41A']
+[2020-07-31 17:21:29,733] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['3A', 'n41A']
+[2020-07-31 17:21:29,734] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:21:29,734] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:21:29,734] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:29,736] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 3A-n41A #############
+[2020-07-31 17:21:29,737] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:21:29,737] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:21:29,737] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:21:29,737] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:21:29,737] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 8A-n78A
+[2020-07-31 17:21:29,737] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:21:29,738] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:21:29,738] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 8A-n78A 
+[2020-07-31 17:21:29,738] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 
+[2020-07-31 17:21:29,739] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:21:29,739] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾8A-n78A¡¿#######################
+
+[2020-07-31 17:21:29,739] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:21:29,743] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['8A', 'n78A']
+[2020-07-31 17:21:29,743] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['8A', 'n78A']
+[2020-07-31 17:21:29,744] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['8A', 'n78A']
+[2020-07-31 17:21:29,744] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['8A', 'n78A']
+[2020-07-31 17:21:29,744] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['8A', 'n78A']
+[2020-07-31 17:21:29,744] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['8A', 'n78A']
+[2020-07-31 17:21:29,746] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:21:29,746] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:21:29,747] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:21:29,750] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 8A-n78A #############
+[2020-07-31 17:21:29,750] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:21:29,750] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:21:29,750] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:21:29,751] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:21:29,751] Modem_CA_Verify_Keysight.py->cleanup line:485 [INFO]preset device
+[2020-07-31 17:21:29,751] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:MEASure:LTE:CELL1:BTHRoughput:STATe 0
+[2020-07-31 17:21:29,751] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:MEASure:LTE:CELL1:BTHRoughput:STATe?
+[2020-07-31 17:21:29,792] KeySightUXM.py->stop_measure_tput line:379 [INFO]tput measure stop successfully
+[2020-07-31 17:21:29,792] Modem_CA_Verify_Keysight.py->main line:389 [INFO]#################################################
+[2020-07-31 17:21:29,792] Modem_CA_Verify_Keysight.py->main line:390 [INFO]##########test finished#########################
+[2020-07-31 17:21:29,792] Modem_CA_Verify_Keysight.py->main line:391 [INFO]################################################
+[2020-07-31 17:23:59,033] main.py->get_tc_module line:64 [INFO]get tc module
+[2020-07-31 17:23:59,034] Modem_CA_Verify_Keysight.py->__init__ line:35 [INFO]*** module Modem_CA_Verify_Keysight constructor
+[2020-07-31 17:23:59,034] Modem_CA_Verify_Keysight.py->__init__ line:40 [INFO]True
+[2020-07-31 17:23:59,034] Modem_CA_Verify_Keysight.py->read_nr_band_from_config line:123 [INFO]{'1A': (1, 300, 10), '1AA': (1, 500, 20), '1C': (1, 201, 20), '1CC': (1, 399, 20), '2A': (2, 900, 10), '2AA': (2, 1150, 10), '2C': (2, 801, 20), '2CC': (2, 999, 20), '3A': (3, 1300, 20), '3AA': (3, 1775, 20), '3C': (3, 1481, 10), '3CC': (3, 1625, 20), '4A': (4, 2175, 10), '4AA': (4, 2350, 10), '5A': (5, 2476, 10), '5B': (5, 2476, 10), '5BB': (5, 2575, 10), '5AA': (5, 2600, 10), '7A': (7, 3100, 10), '7AA': (7, 3400, 10), '7C': (7, 3006, 10), '7CC': (7, 3150, 20), '7B': (7, 3076, 15), '7BB': (7, 3169, 5), '8A': (8, 3625, 10), '12A': (12, 5095, 10), '12B': (12, 5048, 5), '12BB': (12, 5120, 10), '13A': (13, 5230, 10), '14A': (14, 5330, 10), '17A': (17, 5790, 10), '18A': (18, 5925, 10), '19A': (19, 6075, 10), '20A': (20, 6300, 10), '25A': (25, 8140, 20), '25AA': (25, 8590, 20), '26A': (26, 8990, 10), '26AA': (26, 8990, 5), '28A': (28, 9435, 10), '29A': (29, 9715, 10), '30A': (30, 9820, 10), '32A': (32, 10140, 10), '38A': (38, 38000, 10), '38C': (38, 37850, 20), '38CC': (38, 38048, 20), '40A': (40, 39150, 10), '40AA': (40, 39600, 10), '40C': (40, 39249, 20), '40CC': (40, 39051, 20), '40D': (40, '38952', 20), '40DD': (40, 39150, 20), '40DDD': (40, 39348, 20), '46A': (46, 46890), '46AA': (46, 54340, 20), '46C': (46, 50692, 20), '46CC': (46, 50890, 20), '46D': (46, 53942, 20), '46DD': (46, 54140, 20), '46DDD': (46, 54338, 20), '66B': (66, 66837, 10), '66BB': (66, 66936, 10), '66A': (66, 66486, 10), '66AA': (66, 67086, 10), '66C': (66, 66787, 20), '66CC': (66, 66985, 20), '66D': (66, 66688, 20), '66DD': (66, 66886, 20), '66DDD': (66, 67084, 20), '71A': (71, 68765, 10), '41C': (41, 40521, 20), '41CC': (41, 40719, 20), '41A': (41, 40620, 20), '41AA': (41, 41540, 10), '41D': (41, 40422, 20), '41DD': (41, 40620, 20), '41DDD': (41, 40818, 20), '41E': (41, 39705, 10), '41EE': (41, 39849, 20), '41EEE': (41, 41292, 20), '41EEEE': (41, 41490, 20), 'n1A': ['n1'], 'n2A': ('n2', 390000, 20), 'n3A': ['n3'], 'n5A': ['n5'], 'n7A': ['n7'], 'n66A': ['n66'], 'n41A': ['n41'], 'n71A': ['n71'], 'n28A': ['n28'], 'n78A': ['n78'], 'n25A': ['n25'], 'n12A': ['n12'], 'n8A': ['n8'], 'n20A': ['n20'], 'n29A': ['n29'], 'n34A': ['n34'], 'n38A': ['n38'], 'n39A': ['n39'], 'n40A': ['n40'], 'n48A': ['n48'], 'n50A': ['n50'], 'n51A': ['n51'], 'n65A': ['n65'], 'n70A': ['n70'], 'n74A': ['n74'], 'n75A': ['n75'], 'n76A': ['n76'], 'n77A': ['n77'], 'n79A': ['n79'], 'n261A': ['n261'], 'n260A': ['n260'], 'n257A': ['n257'], 'n258A': ['n258']}
+[2020-07-31 17:23:59,035] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:23:59,038] Modem_CA_Verify_Keysight.py->main line:284 [INFO]########################################
+[2020-07-31 17:23:59,039] Modem_CA_Verify_Keysight.py->main line:285 [INFO]#########main starts#########
+[2020-07-31 17:23:59,039] Modem_CA_Verify_Keysight.py->main line:286 [INFO]########################################
+[2020-07-31 17:23:59,066] KeySightUXM.py->__init__ line:30 [INFO]connect to keysight UXM: TCPIP0::192.168.0.2::hislip2::INSTR
+[2020-07-31 17:23:59,132] Modem_CA_Verify_Keysight.py->sleep line:255 [INFO]sleep 5 second
+[2020-07-31 17:24:04,205] Modem_CA_Verify_Keysight.py->read_conf line:140 [INFO]nocol:3
+[2020-07-31 17:24:04,206] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 1A-n3A
+[2020-07-31 17:24:04,206] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:24:04,206] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]44
+[2020-07-31 17:24:04,207] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 1A-n3A 
+[2020-07-31 17:24:04,207] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 44
+[2020-07-31 17:24:04,207] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:24:04,207] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾1A-n3A¡¿#######################
+
+[2020-07-31 17:24:04,207] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:24:04,208] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['1A', 'n3A']
+[2020-07-31 17:24:04,208] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', 'n3A']
+[2020-07-31 17:24:04,208] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', 'n3A']
+[2020-07-31 17:24:04,208] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', 'n3A']
+[2020-07-31 17:24:04,208] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', 'n3A']
+[2020-07-31 17:24:04,208] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['1A', 'n3A']
+[2020-07-31 17:24:04,208] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:24:04,208] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:24:04,208] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:24:04,210] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 1A-n3A #############
+[2020-07-31 17:24:04,211] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:24:04,211] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:24:04,211] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:24:04,211] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:24:04,211] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 7A-n3A
+[2020-07-31 17:24:04,211] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:24:04,211] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]44
+[2020-07-31 17:24:04,211] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 7A-n3A 
+[2020-07-31 17:24:04,211] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 44
+[2020-07-31 17:24:04,211] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:24:04,212] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾7A-n3A¡¿#######################
+
+[2020-07-31 17:24:04,212] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:24:04,212] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['7A', 'n3A']
+[2020-07-31 17:24:04,212] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['7A', 'n3A']
+[2020-07-31 17:24:04,212] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['7A', 'n3A']
+[2020-07-31 17:24:04,212] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['7A', 'n3A']
+[2020-07-31 17:24:04,212] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['7A', 'n3A']
+[2020-07-31 17:24:04,212] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['7A', 'n3A']
+[2020-07-31 17:24:04,213] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:24:04,213] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:24:04,214] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:24:04,215] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 7A-n3A #############
+[2020-07-31 17:24:04,215] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:24:04,215] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:24:04,215] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:24:04,215] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:24:04,216] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 8A-n3A
+[2020-07-31 17:24:04,216] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]2
+[2020-07-31 17:24:04,216] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]24
+[2020-07-31 17:24:04,216] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 8A-n3A 
+[2020-07-31 17:24:04,216] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 24
+[2020-07-31 17:24:04,216] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:24:04,216] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾8A-n3A¡¿#######################
+
+[2020-07-31 17:24:04,216] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:24:04,217] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['8A', 'n3A']
+[2020-07-31 17:24:04,217] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['8A', 'n3A']
+[2020-07-31 17:24:04,217] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['8A', 'n3A']
+[2020-07-31 17:24:04,217] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['8A', 'n3A']
+[2020-07-31 17:24:04,217] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['8A', 'n3A']
+[2020-07-31 17:24:04,218] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['8A', 'n3A']
+[2020-07-31 17:24:04,218] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:24:04,218] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:24:04,218] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:24:04,219] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 8A-n3A #############
+[2020-07-31 17:24:04,219] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:24:04,219] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:24:04,219] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:24:04,220] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:24:04,220] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 8A-n1A
+[2020-07-31 17:24:04,220] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]2
+[2020-07-31 17:24:04,220] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]24
+[2020-07-31 17:24:04,220] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 8A-n1A 
+[2020-07-31 17:24:04,220] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 24
+[2020-07-31 17:24:04,221] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:24:04,221] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾8A-n1A¡¿#######################
+
+[2020-07-31 17:24:04,221] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:24:04,221] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['8A', 'n1A']
+[2020-07-31 17:24:04,221] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['8A', 'n1A']
+[2020-07-31 17:24:04,221] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['8A', 'n1A']
+[2020-07-31 17:24:04,222] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['8A', 'n1A']
+[2020-07-31 17:24:04,222] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['8A', 'n1A']
+[2020-07-31 17:24:04,222] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['8A', 'n1A']
+[2020-07-31 17:24:04,222] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:24:04,222] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:24:04,222] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:24:04,227] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 8A-n1A #############
+[2020-07-31 17:24:04,227] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:24:04,227] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:24:04,227] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:24:04,227] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:24:04,228] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 3A-3A-7A-n1A
+[2020-07-31 17:24:04,228] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:24:04,228] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]42
+[2020-07-31 17:24:04,228] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]424
+[2020-07-31 17:24:04,229] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4244
+[2020-07-31 17:24:04,229] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 3A-3A-7A-n1A 
+[2020-07-31 17:24:04,229] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 4244
+[2020-07-31 17:24:04,229] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:24:04,229] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾3A-3A-7A-n1A¡¿#######################
+
+[2020-07-31 17:24:04,229] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:24:04,230] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,230] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,230] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,230] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,230] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,230] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:24:04,231] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,231] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:24:04,231] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,231] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:24:04,231] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:24:04,231] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:24:04,231] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:24:04,233] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 3A-3A-7A-n1A #############
+[2020-07-31 17:24:04,233] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:24:04,233] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:24:04,233] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:24:04,233] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:24:04,233] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 3A-3A-7A-n1A
+[2020-07-31 17:24:04,234] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:24:04,234] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]42
+[2020-07-31 17:24:04,246] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]424
+[2020-07-31 17:24:04,246] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4244
+[2020-07-31 17:24:04,247] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 3A-3A-7A-n1A 
+[2020-07-31 17:24:04,247] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 4244
+[2020-07-31 17:24:04,248] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:24:04,248] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾3A-3A-7A-n1A¡¿#######################
+
+[2020-07-31 17:24:04,248] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:24:04,248] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,248] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,248] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,248] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,248] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,248] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:24:04,248] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,248] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:24:04,249] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,249] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:24:04,250] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:24:04,250] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:24:04,250] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:24:04,251] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 3A-3A-7A-n1A #############
+[2020-07-31 17:24:04,251] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:24:04,251] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:24:04,251] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:24:04,251] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:24:04,251] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 3A-3A-7A-n1A
+[2020-07-31 17:24:04,252] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:24:04,252] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]42
+[2020-07-31 17:24:04,252] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]424
+[2020-07-31 17:24:04,252] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4244
+[2020-07-31 17:24:04,252] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 3A-3A-7A-n1A 
+[2020-07-31 17:24:04,252] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 4244
+[2020-07-31 17:24:04,253] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:24:04,253] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾3A-3A-7A-n1A¡¿#######################
+
+[2020-07-31 17:24:04,253] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:24:04,255] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,255] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,255] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,256] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,256] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,256] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:24:04,256] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,256] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:24:04,256] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', '3A', '7A', 'n1A']
+[2020-07-31 17:24:04,256] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['3A', '3AA', '7A', 'n1A']
+[2020-07-31 17:24:04,259] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:24:04,260] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:24:04,260] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:24:04,263] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 3A-3A-7A-n1A #############
+[2020-07-31 17:24:04,263] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:24:04,263] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:24:04,263] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:24:04,264] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:24:04,264] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 1A-3A-3A-n7A
+[2020-07-31 17:24:04,264] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:24:04,264] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]42
+[2020-07-31 17:24:04,264] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]422
+[2020-07-31 17:24:04,264] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4224
+[2020-07-31 17:24:04,264] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 1A-3A-3A-n7A 
+[2020-07-31 17:24:04,264] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 4224
+[2020-07-31 17:24:04,265] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:24:04,265] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾1A-3A-3A-n7A¡¿#######################
+
+[2020-07-31 17:24:04,265] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:24:04,265] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,265] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,265] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,266] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,266] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,266] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,266] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,266] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3AA', 'n7A']
+[2020-07-31 17:24:04,266] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,266] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['1A', '3A', '3AA', 'n7A']
+[2020-07-31 17:24:04,266] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:24:04,266] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:24:04,267] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:24:04,268] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 1A-3A-3A-n7A #############
+[2020-07-31 17:24:04,268] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:24:04,268] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:24:04,268] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:24:04,268] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:24:04,269] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 1A-3A-3A-n7A
+[2020-07-31 17:24:04,269] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4
+[2020-07-31 17:24:04,269] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]42
+[2020-07-31 17:24:04,269] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]422
+[2020-07-31 17:24:04,269] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]4224
+[2020-07-31 17:24:04,269] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 1A-3A-3A-n7A 
+[2020-07-31 17:24:04,269] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 4224
+[2020-07-31 17:24:04,270] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:24:04,270] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾1A-3A-3A-n7A¡¿#######################
+
+[2020-07-31 17:24:04,270] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:24:04,271] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,271] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,271] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,271] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,271] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,271] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,271] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,271] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3AA', 'n7A']
+[2020-07-31 17:24:04,271] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,271] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['1A', '3A', '3AA', 'n7A']
+[2020-07-31 17:24:04,272] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:24:04,272] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:24:04,272] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:24:04,274] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 1A-3A-3A-n7A #############
+[2020-07-31 17:24:04,274] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:24:04,274] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:24:04,274] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:24:04,274] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:24:04,275] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 1A-3A-3A-n7A
+[2020-07-31 17:24:04,275] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]2
+[2020-07-31 17:24:04,275] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]24
+[2020-07-31 17:24:04,275] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]244
+[2020-07-31 17:24:04,275] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]2444
+[2020-07-31 17:24:04,275] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 1A-3A-3A-n7A 
+[2020-07-31 17:24:04,275] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 2444
+[2020-07-31 17:24:04,276] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:24:04,276] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾1A-3A-3A-n7A¡¿#######################
+
+[2020-07-31 17:24:04,276] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:24:04,277] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,277] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,277] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,277] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,277] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,277] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,277] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,277] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', '3A', '3AA', 'n7A']
+[2020-07-31 17:24:04,277] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', '3A', '3A', 'n7A']
+[2020-07-31 17:24:04,277] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['1A', '3A', '3AA', 'n7A']
+[2020-07-31 17:24:04,278] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:24:04,278] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:24:04,278] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:24:04,280] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 1A-3A-3A-n7A #############
+[2020-07-31 17:24:04,281] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:24:04,281] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:24:04,281] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:24:04,281] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:24:04,281] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 1A-n7A
+[2020-07-31 17:24:04,281] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:24:04,281] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:24:04,282] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 1A-n7A 
+[2020-07-31 17:24:04,282] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 
+[2020-07-31 17:24:04,282] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:24:04,282] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾1A-n7A¡¿#######################
+
+[2020-07-31 17:24:04,282] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:24:04,282] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['1A', 'n7A']
+[2020-07-31 17:24:04,282] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', 'n7A']
+[2020-07-31 17:24:04,282] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', 'n7A']
+[2020-07-31 17:24:04,283] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['1A', 'n7A']
+[2020-07-31 17:24:04,283] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['1A', 'n7A']
+[2020-07-31 17:24:04,283] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['1A', 'n7A']
+[2020-07-31 17:24:04,283] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:24:04,283] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:24:04,283] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:24:04,285] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 1A-n7A #############
+[2020-07-31 17:24:04,285] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:24:04,285] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:24:04,285] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:24:04,285] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:24:04,286] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 3A-n41A
+[2020-07-31 17:24:04,286] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:24:04,286] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:24:04,286] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 3A-n41A 
+[2020-07-31 17:24:04,286] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 
+[2020-07-31 17:24:04,287] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:24:04,287] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾3A-n41A¡¿#######################
+
+[2020-07-31 17:24:04,287] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:24:04,287] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['3A', 'n41A']
+[2020-07-31 17:24:04,287] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', 'n41A']
+[2020-07-31 17:24:04,287] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', 'n41A']
+[2020-07-31 17:24:04,287] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['3A', 'n41A']
+[2020-07-31 17:24:04,287] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['3A', 'n41A']
+[2020-07-31 17:24:04,287] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['3A', 'n41A']
+[2020-07-31 17:24:04,288] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:24:04,288] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:24:04,288] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:24:04,289] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 3A-n41A #############
+[2020-07-31 17:24:04,291] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:24:04,291] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:24:04,291] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:24:04,291] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:24:04,291] Modem_CA_Verify_Keysight.py->main line:313 [INFO]ca combos new name is 8A-n78A
+[2020-07-31 17:24:04,291] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:24:04,291] Modem_CA_Verify_Keysight.py->get_mimo_list line:159 [INFO]
+[2020-07-31 17:24:04,291] Modem_CA_Verify_Keysight.py->main line:316 [INFO]ca combo is 8A-n78A 
+[2020-07-31 17:24:04,292] Modem_CA_Verify_Keysight.py->main line:317 [INFO]mimo list is 
+[2020-07-31 17:24:04,292] Modem_CA_Verify_Keysight.py->main line:330 [INFO]##############################################
+
+[2020-07-31 17:24:04,292] Modem_CA_Verify_Keysight.py->main line:331 [INFO]############################¡¾8A-n78A¡¿#######################
+
+[2020-07-31 17:24:04,292] Modem_CA_Verify_Keysight.py->main line:332 [INFO]#############################################
+
+[2020-07-31 17:24:04,293] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:546 [INFO]ca is ['8A', 'n78A']
+[2020-07-31 17:24:04,293] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['8A', 'n78A']
+[2020-07-31 17:24:04,293] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['8A', 'n78A']
+[2020-07-31 17:24:04,293] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:553 [INFO]ca_new is ['8A', 'n78A']
+[2020-07-31 17:24:04,293] Modem_CA_Verify_Keysight.py->get_cell_parameter_from_CA_combs line:554 [INFO]ca is ['8A', 'n78A']
+[2020-07-31 17:24:04,293] Modem_CA_Verify_Keysight.py->main line:360 [INFO]ca_comb_new.:['8A', 'n78A']
+[2020-07-31 17:24:04,294] KeySightUXM.py->deactive_cell1 line:221 [INFO]deactive cell1
+[2020-07-31 17:24:04,294] Modem_CA_Verify_Keysight.py->main line:382 [ERROR]there are errors in test please check the setup and rerun error is 'RootLogger' object has no attribute 'Print'
+[2020-07-31 17:24:04,295] Modem_CA_Verify_Keysight.py->open_test_report_csv_file line:183 [INFO]open CSV File:D:\PAT\LEN_AUTO_19.00_DEV01_MODEM_V1.0_release\01_logs_2020-07-31_171951\CA_TEST.csv
+[2020-07-31 17:24:04,296] Modem_CA_Verify_Keysight.py->print_verdict line:236 [INFO]################ca_comb = 8A-n78A #############
+[2020-07-31 17:24:04,296] Modem_CA_Verify_Keysight.py->print_verdict line:237 [INFO]################pcell =  ###############
+[2020-07-31 17:24:04,296] Modem_CA_Verify_Keysight.py->print_verdict line:239 [INFO]#############nr channel LOW####################
+[2020-07-31 17:24:04,296] Modem_CA_Verify_Keysight.py->print_verdict line:240 [INFO]################iteration 0###################
+[2020-07-31 17:24:04,296] Modem_CA_Verify_Keysight.py->print_verdict line:241 [INFO]################verdict = ERROR ###################
+[2020-07-31 17:24:04,296] Modem_CA_Verify_Keysight.py->cleanup line:485 [INFO]preset device
+[2020-07-31 17:24:04,296] KeySightUXM.py->write line:47 [INFO]SCPI COMMAND : BSE:MEASure:LTE:CELL1:BTHRoughput:STATe 0
+[2020-07-31 17:24:04,297] KeySightUXM.py->query line:63 [INFO]SCPI COMMAND :BSE:MEASure:LTE:CELL1:BTHRoughput:STATe?
+[2020-07-31 17:24:04,315] KeySightUXM.py->stop_measure_tput line:379 [INFO]tput measure stop successfully
+[2020-07-31 17:24:04,315] Modem_CA_Verify_Keysight.py->main line:389 [INFO]#################################################
+[2020-07-31 17:24:04,316] Modem_CA_Verify_Keysight.py->main line:390 [INFO]##########test finished#########################
+[2020-07-31 17:24:04,316] Modem_CA_Verify_Keysight.py->main line:391 [INFO]################################################

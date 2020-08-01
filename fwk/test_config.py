@@ -19,23 +19,39 @@ class TestConfig(object):
  
     def create_default_params(self):
         self.log.error("Creating default configuration")
-        self.config["project"] = "Defender"
+        self.config["ProjectName"] = "Defender"
         self.config["device_name"] = "keysightUXM"
         self.config["tc_module"] = "Modem_CA_Verify_Keysight"
         self.config["test_config_name"] = "test_config.ini"
         self.config["ProjectName"] = "Defender"
-        self.config["is_restart_phone"] = False
+        self.config["manual"] = False
         self.config["root_path"] = os.getcwd()
         self.config["config_path"] = self.config["root_path"] + "\\02_config"
         self.config["CA_tpye"] = "LTE"
         self.config["ca_combs_name"] = "ca_combs.xlsx"
         self.config["ca_parameter_load_type"] = "auto"
         self.config["document_path"] = os.getcwd() + "\\" +"03_document"
-        self.config["auto_get_qualcomm_port"] = True
+        self.config["auto_get_qualcomm_port"] = False
         self.config["qualcomm_port"] = "21"
         self.config["phone_control_method"] = "qualcomm"
-        self.config["is_loop_pcell"] = True
-        
+#         self.config["is_loop_pcell"] = True
+        self.config["repeat_while_fail"] = False
+        self.config["is_loop_pcell"] = False
+        self.config["channel_config_nr"] = ["LOW"]
+        self.config["scpi_command_extra_name"] = "scpi_command_extra.txt"
+        self.config["is_tx_power_test"] = False
+        self.config["is_throughput_test"] = False
+        self.config["sim_card_type"] = "keysight"
+        self.config["Instrument IP"] = "192.168.0.2"
+        self.config["guide_document_name"]= "user_guide.docx"
+        self.config["test_pause"]= False
+        self.config["test_stop"]= False
+        self.config["scpi_command"] = os.getcwd() + "\\" +"04_scpi_command"
+        self.config["combos_path"] = os.getcwd() + "\\" +"05_combos"
+        self.config["03_documnet"] = os.getcwd() + "\\" +"03_document"
+        self.config["lte_4X4_mimo_band"] = []
+        self.config["mimo_list"] = "1111111"
+        self.config["NR_TDD_BW"] = 60
     def read_config_file(self,test_config_file_name):
         
         test_config_file_path = os.path.join(self.config["config_path"], test_config_file_name)
@@ -50,10 +66,15 @@ class TestConfig(object):
 #             print (section)
 #             print(test_config_obj[section].iteritems())
             for key,value in test_config_obj[section].iteritems():
+                if value =="true":
+                    value = True
+#                 if value =="False":
+#                     value = False
 #                 print("key is %s value is %s"%(key,value))
                 self.config[key] = value
 #                 print(self.config)
-        self.log.info(self.config)      
+        self.log.info(self.config) 
+#          self.log.info("##### channel_config_nr is",self.config["channel_config_nr"])     
     def get_ca_comb(self,ca_type,a):
         if ca_type != 'DC':
             c = a.replace(" ","").replace(",","").split("CA_")

@@ -1,0 +1,61 @@
+#######################################
+###design by weidehui#################
+[common]
+#######################################
+#Project Name Defender,Racer
+ProjectName = Racer
+is_restart_phone = true
+#########sim card can be configured as keysight or 3GPP
+sim_card_type = keysight
+######################################
+
+
+#######################################
+[device_config]
+#######################################
+#######keysight#######################
+device_name = KeysightUXM
+Instrument IP = 192.168.0.2	
+#device_ip = TCPIP0::192.168.0.2::5125::SOCKET
+device_ta = TCPIP0::192.168.0.2::hislip2::INSTR
+device_xapp_ip = TCPIP0::192.168.0.2::hislip1::INSTR
+########CMW500############# 
+device2_name = CMW500
+GPIB = GPIB0::20::INSTR
+##########################
+
+########################################
+[tc_config]
+########################################
+#####this is the module which you want to use
+#####you can select "Modem_CA_Verify_Keysight","measureCA"
+tc_module = Modem_CA_Verify_Keysight
+#tc_module = MeasureCA
+### ca parameter load type "manually or auto"
+ca_parameter_load_type = auto
+ca_combs_name = ca_combs.xlsx
+#repeat_while_fail = 0
+repeat_fail_max = 1
+#is_loop_pcell = true
+#is_tx_power_test = truerepeat_fail_max
+#is_throughput_test = true
+#lte_4X4_mimo_band = 2,4,7,25,30,41,66
+NR_4X4_mimo_band = n1,n3,n7,n38,n41,n77,n78
+########################################
+
+
+######################################
+[cell_config]
+######################################
+nr_band_list = n1,n3,n5,n7,n8,n12,n20,n25,n28,n29,n34,n38,n39,n40,n41,n48,n50,n51,n65,n66,n70,n71,n74,n75,n76,n77,n78,n79,n41,n261,n260,n261,n257,n258
+channel_config_nr = LOW,MID,HIGH
+#######################################
+
+#####################################
+[phone_config]
+######################################
+auto_get_qualcomm_port = true
+qualcomm_port = 21
+phone_control_method = adb
+#phone_control_method = qualcomm
+restart_phone = true

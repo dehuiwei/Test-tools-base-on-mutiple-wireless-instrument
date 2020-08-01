@@ -5,12 +5,27 @@ Created on Thu Aug  1 14:01:04 2019
 @author: lidz1
 """
 
+import logging
+import visa
+import pyvisa as visa
 import time
 import tkinter
 from tkinter import messagebox
+import fwk
 class CMW500(object):
-    def __init__(self):
-        pass
+    def __init__(self,fwk,GPIB):
+###modify by weidehui
+        rm=visa.ResourceManager()
+        ##RTB = rm.open_resource('TCPIP0::169.254.4.61::inst0::INSTR')
+#         GPIB = self.cfg["GPIB"]
+#         RTB = rm.open_resource('GPIB0::20::INSTR')
+        self.fwk = fwk
+        self.log = self.fwk.log
+        self.inst = rm.open_resource(GPIB)
+        self.inst.timeout=20000
+        self.inst.read_termination = "\n"
+        self.cfg = self.fwk.cfg
+###modify by weidehui
 
     def ber(self,rtb,pwr):
         rtb.write('CONF:GSM:SIGN1:RFS:LEV:TCH '+str(pwr))

@@ -1,2 +1,3 @@
 __all__ = ["CMW500",
-           "KeySightUXM"]
+           "KeySightUXM",
+           "XAPPS"]
